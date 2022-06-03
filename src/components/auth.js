@@ -73,7 +73,13 @@ const Auth = () => {
         <Form onSubmit={handleSubmit}>
             <Form.Group className='mb-3' controlId='formBasicText'>
                 <Form.Label>User name</Form.Label>
-                <Form.Control name='username' value={data.username || ""}  onChange={handleChange} type='text' placeholder='Enter username' />
+                <Form.Control 
+                  name='username' 
+                  value={data.username || ""}  
+                  onChange={handleChange} 
+                  type='text' 
+                  placeholder='Enter username' 
+                />
                 <Form.Text className='text-muted'>
                     We'll never share your email with anyone else.
                 </Form.Text>
